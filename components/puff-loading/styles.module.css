@@ -1,0 +1,17 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.spin {
+  animation: spin .7s linear infinite;
+}
+
+.loadingWrapper  {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
