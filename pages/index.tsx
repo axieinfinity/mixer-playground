@@ -1,21 +1,31 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
 
-const Home: NextPage = () => {
+import { AxieFigure } from "../components/axie-figure/AxieFigureNoSsr";
+import s from "./styles.module.css";
+
+const Home = () => {
   return (
     <div>
       <Head>
         <title>Axie Mixer Playground</title>
-        <meta name="description" content="A playground with a generated axie." />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="A playground where you can generate an Axie."
+        />
+        <link rel="icon" href="/axie.png" />
       </Head>
 
       <main>
-        Playground
+        <AxieFigure />
+        <div className={s.directions}>
+          <p className={s.directionsText}>
+            Directions: Use arrow keys to make the Axie run. Press "E" to
+            attack. Press "Space" to jump!
+          </p>
+        </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

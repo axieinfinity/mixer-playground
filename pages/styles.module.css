@@ -1,0 +1,11 @@
+.directions {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.directionsText {
+  width: 600px;
+  margin: 0px;
+}

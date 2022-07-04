@@ -1,0 +1,1622 @@
+{
+  "version": 1,
+  "items": {
+    "colors": [
+      { "key": "beast-00", "primary1": "fdfcf2", "primary2": "af8c56" },
+      { "key": "beast-01", "primary1": "544f44", "primary2": "edd8b8" },
+      { "key": "beast-02", "primary1": "ffd500", "primary2": "fffeda" },
+      { "key": "beast-03", "primary1": "fdb014", "primary2": "fef0a3" },
+      { "key": "beast-04", "primary1": "f5a037", "primary2": "fde5b6" },
+      { "key": "beast-06", "primary1": "427cad", "primary2": "ffcd63" },
+      { "key": "plant-00", "primary1": "fefdf1", "primary2": "98984a" },
+      { "key": "plant-01", "primary1": "4e523e", "primary2": "efe5a7" },
+      { "key": "plant-02", "primary1": "afdb1b", "primary2": "e3efdb" },
+      { "key": "plant-03", "primary1": "decd00", "primary2": "f3eaba" },
+      { "key": "plant-04", "primary1": "99ff73", "primary2": "fbfdf1" },
+      { "key": "aquatic-00", "primary1": "f4fff4", "primary2": "3ca1d9" },
+      { "key": "aquatic-01", "primary1": "4d545e", "primary2": "a9ead5" },
+      { "key": "aquatic-02", "primary1": "00f1d2", "primary2": "befedb" },
+      { "key": "aquatic-03", "primary1": "00dff3", "primary2": "bffef4" },
+      { "key": "aquatic-04", "primary1": "00b8ff", "primary2": "c9eeff" },
+      { "key": "aquatic-06", "primary1": "e12f64", "primary2": "62ffe2" },
+      { "key": "bug-00", "primary1": "fffaf5", "primary2": "e22737" },
+      { "key": "bug-01", "primary1": "553b39", "primary2": "ffe7e2" },
+      { "key": "bug-02", "primary1": "ff606c", "primary2": "fff4f9" },
+      { "key": "bug-03", "primary1": "ff433e", "primary2": "ffdcce" },
+      { "key": "bug-04", "primary1": "df2e54", "primary2": "ffd8d6" },
+      { "key": "bird-00", "primary1": "fff7ff", "primary2": "fa59a0" },
+      { "key": "bird-01", "primary1": "583c44", "primary2": "fec3dd" },
+      { "key": "bird-02", "primary1": "ff99b0", "primary2": "ffd8f3" },
+      { "key": "bird-03", "primary1": "ffafc1", "primary2": "ffe0e7" },
+      { "key": "bird-04", "primary1": "ff78b4", "primary2": "ffedff" },
+      { "key": "reptile-00", "primary1": "fff7ff", "primary2": "bb68ce" },
+      { "key": "reptile-01", "primary1": "5e436d", "primary2": "f4cdfe" },
+      { "key": "reptile-02", "primary1": "c569cf", "primary2": "ffd2fe" },
+      { "key": "reptile-03", "primary1": "9967fb", "primary2": "dac3ff" },
+      { "key": "reptile-04", "primary1": "f8bbff", "primary2": "fff1fe" },
+      { "key": "reptile-06", "primary1": "00c15f", "primary2": "f4aaff" },
+      { "key": "dawn-00", "primary1": "fcfbf2", "primary2": "d4f8d0" },
+      { "key": "dawn-01", "primary1": "594026", "primary2": "fede29" },
+      { "key": "dawn-02", "primary1": "bbbaff", "primary2": "eaf8ff" },
+      { "key": "dawn-03", "primary1": "ffff8d", "primary2": "feffe3" },
+      { "key": "dawn-04", "primary1": "a5ffff", "primary2": "ffffff" },
+      { "key": "dusk-00", "primary1": "f4fefb", "primary2": "feffff" },
+      { "key": "dusk-01", "primary1": "1d4d4f", "primary2": "d0fec0" },
+      { "key": "dusk-02", "primary1": "0097a0", "primary2": "abffac" },
+      { "key": "dusk-03", "primary1": "007181", "primary2": "62feda" },
+      { "key": "dusk-04", "primary1": "00aeb7", "primary2": "a4ffcb" },
+      { "key": "mech-00", "primary1": "f6fbff", "primary2": "929292" },
+      { "key": "mech-01", "primary1": "505050", "primary2": "e5e5e5" },
+      { "key": "mech-02", "primary1": "ced5d7", "primary2": "f1fdf0" },
+      { "key": "mech-03", "primary1": "ad6d3f", "primary2": "9ae6cb" },
+      { "key": "mech-04", "primary1": "8c8e9e", "primary2": "ebe7de" },
+      { "key": "body-frosty", "primary1": "f3fefe", "primary2": "f3fefe" }
+    ],
+    "bodies": [
+      "body-normal",
+      "body-fuzzy",
+      "body-spiky",
+      "body-wetdog",
+      "body-curly",
+      "body-sumo",
+      "body-bigyak",
+      "body-frosty",
+      "body-agamo",
+      "body-mystic-normal",
+      "body-mystic-fuzzy"
+    ],
+    "parts": [
+      {
+        "key": "eyes-zeal",
+        "name": "Zeal",
+        "type": "eyes",
+        "sample": "beast-02"
+      },
+      {
+        "key": "eyes-calico-zeal",
+        "name": "Calico Zeal",
+        "type": "eyes",
+        "sample": "beast-mystic-02"
+      },
+      {
+        "key": "eyes-little-peas",
+        "name": "Little Peas",
+        "type": "eyes",
+        "sample": "beast-04"
+      },
+      {
+        "key": "eyes-snowflakes",
+        "name": "Snowflakes",
+        "type": "eyes",
+        "sample": "xmas-01"
+      },
+      {
+        "key": "eyes-puppy",
+        "name": "Puppy",
+        "type": "eyes",
+        "sample": "beast-08"
+      },
+      {
+        "key": "eyes-chubby",
+        "name": "Chubby",
+        "type": "eyes",
+        "sample": "beast-10"
+      },
+      {
+        "key": "ears-nyan",
+        "name": "Nyan",
+        "type": "ears",
+        "sample": "beast-02"
+      },
+      {
+        "key": "ears-pointy-nyan",
+        "name": "Pointy Nyan",
+        "type": "ears",
+        "sample": "beast-mystic-02"
+      },
+      {
+        "key": "ears-nut-cracker",
+        "name": "Nut Cracker",
+        "type": "ears",
+        "sample": "beast-04"
+      },
+      {
+        "key": "ears-innocent-lamb",
+        "name": "Innocent Lamb",
+        "type": "ears",
+        "sample": "beast-06"
+      },
+      {
+        "key": "ears-merry-lamb",
+        "name": "Merry Lamb",
+        "type": "ears",
+        "sample": "xmas-01"
+      },
+      {
+        "key": "ears-zen",
+        "name": "Zen",
+        "type": "ears",
+        "sample": "beast-08"
+      },
+      {
+        "key": "ears-puppy",
+        "name": "Puppy",
+        "type": "ears",
+        "sample": "beast-10"
+      },
+      {
+        "key": "ears-belieber",
+        "name": "Belieber",
+        "type": "ears",
+        "sample": "beast-12"
+      },
+      {
+        "key": "back-ronin",
+        "name": "Ronin",
+        "type": "back",
+        "sample": "beast-02"
+      },
+      {
+        "key": "back-hasagi",
+        "name": "Hasagi",
+        "type": "back",
+        "sample": "beast-mystic-02"
+      },
+      {
+        "key": "back-hero",
+        "name": "Hero",
+        "type": "back",
+        "sample": "beast-04"
+      },
+      {
+        "key": "back-jaguar",
+        "name": "Jaguar",
+        "type": "back",
+        "sample": "beast-06"
+      },
+      {
+        "key": "back-risky-beast",
+        "name": "Risky Beast",
+        "type": "back",
+        "sample": "beast-08"
+      },
+      {
+        "key": "back-hamaya",
+        "name": "Hamaya",
+        "type": "back",
+        "sample": "japan-02"
+      },
+      {
+        "key": "back-timber",
+        "name": "Timber",
+        "type": "back",
+        "sample": "beast-10"
+      },
+      {
+        "key": "back-furball",
+        "name": "Furball",
+        "type": "back",
+        "sample": "beast-12"
+      },
+      {
+        "key": "horn-little-branch",
+        "name": "Little Branch",
+        "type": "horn",
+        "sample": "beast-02"
+      },
+      {
+        "key": "horn-winter-branch",
+        "name": "Winter Branch",
+        "type": "horn",
+        "sample": "beast-mystic-02"
+      },
+      {
+        "key": "horn-imp",
+        "name": "Imp",
+        "type": "horn",
+        "sample": "beast-04"
+      },
+      {
+        "key": "horn-kendama",
+        "name": "Kendama",
+        "type": "horn",
+        "sample": "japan-03"
+      },
+      {
+        "key": "horn-merry",
+        "name": "Merry",
+        "type": "horn",
+        "sample": "beast-06"
+      },
+      {
+        "key": "horn-pocky",
+        "name": "Pocky",
+        "type": "horn",
+        "sample": "beast-08"
+      },
+      {
+        "key": "horn-umaibo",
+        "name": "Umaibo",
+        "type": "horn",
+        "sample": "japan-02"
+      },
+      {
+        "key": "horn-dual-blade",
+        "name": "Dual Blade",
+        "type": "horn",
+        "sample": "beast-10"
+      },
+      {
+        "key": "horn-arco",
+        "name": "Arco",
+        "type": "horn",
+        "sample": "beast-12"
+      },
+      {
+        "key": "tail-cottontail",
+        "name": "Cottontail",
+        "type": "tail",
+        "sample": "beast-02"
+      },
+      {
+        "key": "tail-sakura-cottontail",
+        "name": "Sakura Cottontail",
+        "type": "tail",
+        "sample": "beast-mystic-02"
+      },
+      {
+        "key": "tail-rice",
+        "name": "Rice",
+        "type": "tail",
+        "sample": "beast-04"
+      },
+      {
+        "key": "tail-shiba",
+        "name": "Shiba",
+        "type": "tail",
+        "sample": "beast-06"
+      },
+      {
+        "key": "tail-hare",
+        "name": "Hare",
+        "type": "tail",
+        "sample": "beast-08"
+      },
+      {
+        "key": "tail-nut-cracker",
+        "name": "Nut Cracker",
+        "type": "tail",
+        "sample": "beast-10"
+      },
+      {
+        "key": "tail-gerbil",
+        "name": "Gerbil",
+        "type": "tail",
+        "sample": "beast-12"
+      },
+      {
+        "key": "mouth-nut-cracker",
+        "name": "Nut Cracker",
+        "type": "mouth",
+        "sample": "beast-02"
+      },
+      {
+        "key": "mouth-skull-cracker",
+        "name": "Skull Cracker",
+        "type": "mouth",
+        "sample": "beast-mystic-02"
+      },
+      {
+        "key": "mouth-goda",
+        "name": "Goda",
+        "type": "mouth",
+        "sample": "beast-04"
+      },
+      {
+        "key": "mouth-axie-kiss",
+        "name": "Axie Kiss",
+        "type": "mouth",
+        "sample": "beast-08"
+      },
+      {
+        "key": "mouth-confident",
+        "name": "Confident",
+        "type": "mouth",
+        "sample": "beast-10"
+      },
+      {
+        "key": "mouth-mosquito",
+        "name": "Mosquito",
+        "type": "mouth",
+        "sample": "bug-02"
+      },
+      {
+        "key": "mouth-feasting-mosquito",
+        "name": "Feasting Mosquito",
+        "type": "mouth",
+        "sample": "bug-mystic-02"
+      },
+      {
+        "key": "mouth-pincer",
+        "name": "Pincer",
+        "type": "mouth",
+        "sample": "bug-04"
+      },
+      {
+        "key": "mouth-cute-bunny",
+        "name": "Cute Bunny",
+        "type": "mouth",
+        "sample": "bug-08"
+      },
+      {
+        "key": "mouth-kawaii",
+        "name": "Kawaii",
+        "type": "mouth",
+        "sample": "japan-03"
+      },
+      {
+        "key": "mouth-square-teeth",
+        "name": "Square Teeth",
+        "type": "mouth",
+        "sample": "bug-10"
+      },
+      {
+        "key": "horn-lagging",
+        "name": "Lagging",
+        "type": "horn",
+        "sample": "bug-02"
+      },
+      {
+        "key": "horn-laggingggggg",
+        "name": "Laggingggggg",
+        "type": "horn",
+        "sample": "bug-mystic-02"
+      },
+      {
+        "key": "horn-antenna",
+        "name": "Antenna",
+        "type": "horn",
+        "sample": "bug-04"
+      },
+      {
+        "key": "horn-caterpillars",
+        "name": "Caterpillars",
+        "type": "horn",
+        "sample": "bug-06"
+      },
+      {
+        "key": "horn-pliers",
+        "name": "Pliers",
+        "type": "horn",
+        "sample": "bug-08"
+      },
+      {
+        "key": "horn-parasite",
+        "name": "Parasite",
+        "type": "horn",
+        "sample": "bug-10"
+      },
+      {
+        "key": "horn-p4r451t3",
+        "name": "P4R451T3",
+        "type": "horn",
+        "sample": "agamo-01"
+      },
+      {
+        "key": "horn-leaf-bug",
+        "name": "Leaf Bug",
+        "type": "horn",
+        "sample": "bug-12"
+      },
+      { "key": "tail-ant", "name": "Ant", "type": "tail", "sample": "bug-02" },
+      {
+        "key": "tail-fire-ant",
+        "name": "Fire Ant",
+        "type": "tail",
+        "sample": "bug-mystic-02"
+      },
+      {
+        "key": "tail-twin-tail",
+        "name": "Twin Tail",
+        "type": "tail",
+        "sample": "bug-04"
+      },
+      {
+        "key": "tail-fish-snack",
+        "name": "Fish Snack",
+        "type": "tail",
+        "sample": "bug-06"
+      },
+      {
+        "key": "tail-maki",
+        "name": "Maki",
+        "type": "tail",
+        "sample": "japan-01"
+      },
+      {
+        "key": "tail-gravel-ant",
+        "name": "Gravel Ant",
+        "type": "tail",
+        "sample": "bug-08"
+      },
+      {
+        "key": "tail-pupae",
+        "name": "Pupae",
+        "type": "tail",
+        "sample": "bug-10"
+      },
+      {
+        "key": "tail-thorny-caterpillar",
+        "name": "Thorny Caterpillar",
+        "type": "tail",
+        "sample": "bug-12"
+      },
+      {
+        "key": "back-snail-shell",
+        "name": "Snail Shell",
+        "type": "back",
+        "sample": "bug-02"
+      },
+      {
+        "key": "back-starry-shell",
+        "name": "Starry Shell",
+        "type": "back",
+        "sample": "bug-mystic-02"
+      },
+      {
+        "key": "back-garish-worm",
+        "name": "Garish Worm",
+        "type": "back",
+        "sample": "bug-04"
+      },
+      {
+        "key": "back-candy-canes",
+        "name": "Candy Canes",
+        "type": "back",
+        "sample": "xmas-01"
+      },
+      {
+        "key": "back-buzz-buzz",
+        "name": "Buzz Buzz",
+        "type": "back",
+        "sample": "bug-06"
+      },
+      {
+        "key": "back-sandal",
+        "name": "Sandal",
+        "type": "back",
+        "sample": "bug-08"
+      },
+      {
+        "key": "back-scarab",
+        "name": "Scarab",
+        "type": "back",
+        "sample": "bug-10"
+      },
+      {
+        "key": "back-spiky-wing",
+        "name": "Spiky Wing",
+        "type": "back",
+        "sample": "bug-12"
+      },
+      {
+        "key": "ears-larva",
+        "name": "Larva",
+        "type": "ears",
+        "sample": "bug-02"
+      },
+      {
+        "key": "ears-vector",
+        "name": "Vector",
+        "type": "ears",
+        "sample": "bug-mystic-02"
+      },
+      {
+        "key": "ears-beetle-spike",
+        "name": "Beetle Spike",
+        "type": "ears",
+        "sample": "bug-04"
+      },
+      {
+        "key": "ears-ear-breathing",
+        "name": "Ear Breathing",
+        "type": "ears",
+        "sample": "bug-06"
+      },
+      {
+        "key": "ears-leaf-bug",
+        "name": "Leaf Bug",
+        "type": "ears",
+        "sample": "bug-08"
+      },
+      {
+        "key": "ears-tassels",
+        "name": "Tassels",
+        "type": "ears",
+        "sample": "bug-10"
+      },
+      {
+        "key": "ears-earwing",
+        "name": "Earwing",
+        "type": "ears",
+        "sample": "bug-12"
+      },
+      {
+        "key": "ears-mon",
+        "name": "Mon",
+        "type": "ears",
+        "sample": "japan-03"
+      },
+      {
+        "key": "eyes-bookworm",
+        "name": "Bookworm",
+        "type": "eyes",
+        "sample": "bug-02"
+      },
+      {
+        "key": "eyes-broken-bookworm",
+        "name": "Broken Bookworm",
+        "type": "eyes",
+        "sample": "bug-mystic-02"
+      },
+      { "key": "eyes-neo", "name": "Neo", "type": "eyes", "sample": "bug-04" },
+      {
+        "key": "eyes-nerdy",
+        "name": "Nerdy",
+        "type": "eyes",
+        "sample": "bug-08"
+      },
+      {
+        "key": "eyes-kotaro?",
+        "name": "Kotaro?",
+        "type": "eyes",
+        "sample": "bug-10"
+      },
+      {
+        "key": "eyes-sleepless",
+        "name": "Sleepless",
+        "type": "eyes",
+        "sample": "aquatic-02"
+      },
+      {
+        "key": "eyes-insomnia",
+        "name": "Insomnia",
+        "type": "eyes",
+        "sample": "aquatic-mystic-02"
+      },
+      {
+        "key": "eyes-yen",
+        "name": "Yen",
+        "type": "eyes",
+        "sample": "japan-02"
+      },
+      {
+        "key": "eyes-clear",
+        "name": "Clear",
+        "type": "eyes",
+        "sample": "aquatic-04"
+      },
+      {
+        "key": "eyes-gero",
+        "name": "Gero",
+        "type": "eyes",
+        "sample": "aquatic-08"
+      },
+      {
+        "key": "eyes-telescope",
+        "name": "Telescope",
+        "type": "eyes",
+        "sample": "aquatic-10"
+      },
+      {
+        "key": "mouth-lam",
+        "name": "Lam",
+        "type": "mouth",
+        "sample": "aquatic-02"
+      },
+      {
+        "key": "mouth-lam-handsome",
+        "name": "Lam Handsome",
+        "type": "mouth",
+        "sample": "aquatic-mystic-02"
+      },
+      {
+        "key": "mouth-catfish",
+        "name": "Catfish",
+        "type": "mouth",
+        "sample": "aquatic-04"
+      },
+      {
+        "key": "mouth-risky-fish",
+        "name": "Risky Fish",
+        "type": "mouth",
+        "sample": "aquatic-08"
+      },
+      {
+        "key": "mouth-piranha",
+        "name": "Piranha",
+        "type": "mouth",
+        "sample": "aquatic-10"
+      },
+      {
+        "key": "mouth-geisha",
+        "name": "Geisha",
+        "type": "mouth",
+        "sample": "japan-01"
+      },
+      {
+        "key": "horn-babylonia",
+        "name": "Babylonia",
+        "type": "horn",
+        "sample": "aquatic-02"
+      },
+      {
+        "key": "horn-candy-babylonia",
+        "name": "Candy Babylonia",
+        "type": "horn",
+        "sample": "aquatic-mystic-02"
+      },
+      {
+        "key": "horn-teal-shell",
+        "name": "Teal Shell",
+        "type": "horn",
+        "sample": "aquatic-04"
+      },
+      {
+        "key": "horn-clamshell",
+        "name": "Clamshell",
+        "type": "horn",
+        "sample": "aquatic-06"
+      },
+      {
+        "key": "horn-anemone",
+        "name": "Anemone",
+        "type": "horn",
+        "sample": "aquatic-08"
+      },
+      {
+        "key": "horn-oranda",
+        "name": "Oranda",
+        "type": "horn",
+        "sample": "aquatic-10"
+      },
+      {
+        "key": "horn-shoal-star",
+        "name": "Shoal Star",
+        "type": "horn",
+        "sample": "aquatic-12"
+      },
+      {
+        "key": "horn-5h04l-5t4r",
+        "name": "5H04L-5T4R",
+        "type": "horn",
+        "sample": "agamo-00"
+      },
+      {
+        "key": "ears-nimo",
+        "name": "Nimo",
+        "type": "ears",
+        "sample": "aquatic-02"
+      },
+      {
+        "key": "ears-red-nimo",
+        "name": "Red Nimo",
+        "type": "ears",
+        "sample": "aquatic-mystic-02"
+      },
+      {
+        "key": "ears-tiny-fan",
+        "name": "Tiny Fan",
+        "type": "ears",
+        "sample": "aquatic-04"
+      },
+      {
+        "key": "ears-bubblemaker",
+        "name": "Bubblemaker",
+        "type": "ears",
+        "sample": "aquatic-06"
+      },
+      {
+        "key": "ears-inkling",
+        "name": "Inkling",
+        "type": "ears",
+        "sample": "aquatic-08"
+      },
+      {
+        "key": "ears-gill",
+        "name": "Gill",
+        "type": "ears",
+        "sample": "aquatic-10"
+      },
+      {
+        "key": "ears-seaslug",
+        "name": "Seaslug",
+        "type": "ears",
+        "sample": "aquatic-12"
+      },
+      {
+        "key": "tail-koi",
+        "name": "Koi",
+        "type": "tail",
+        "sample": "aquatic-02"
+      },
+      {
+        "key": "tail-kuro-koi",
+        "name": "Kuro Koi",
+        "type": "tail",
+        "sample": "aquatic-mystic-02"
+      },
+      {
+        "key": "tail-koinobori",
+        "name": "Koinobori",
+        "type": "tail",
+        "sample": "japan-02"
+      },
+      {
+        "key": "tail-nimo",
+        "name": "Nimo",
+        "type": "tail",
+        "sample": "aquatic-04"
+      },
+      {
+        "key": "tail-tadpole",
+        "name": "Tadpole",
+        "type": "tail",
+        "sample": "aquatic-06"
+      },
+      {
+        "key": "tail-ranchu",
+        "name": "Ranchu",
+        "type": "tail",
+        "sample": "aquatic-08"
+      },
+      {
+        "key": "tail-navaga",
+        "name": "Navaga",
+        "type": "tail",
+        "sample": "aquatic-10"
+      },
+      {
+        "key": "tail-shrimp",
+        "name": "Shrimp",
+        "type": "tail",
+        "sample": "aquatic-12"
+      },
+      {
+        "key": "back-hermit",
+        "name": "Hermit",
+        "type": "back",
+        "sample": "aquatic-02"
+      },
+      {
+        "key": "back-crystal-hermit",
+        "name": "Crystal Hermit",
+        "type": "back",
+        "sample": "aquatic-mystic-02"
+      },
+      {
+        "key": "back-blue-moon",
+        "name": "Blue Moon",
+        "type": "back",
+        "sample": "aquatic-04"
+      },
+      {
+        "key": "back-goldfish",
+        "name": "Goldfish",
+        "type": "back",
+        "sample": "aquatic-06"
+      },
+      {
+        "key": "back-sponge",
+        "name": "Sponge",
+        "type": "back",
+        "sample": "aquatic-08"
+      },
+      {
+        "key": "back-anemone",
+        "name": "Anemone",
+        "type": "back",
+        "sample": "aquatic-10"
+      },
+      {
+        "key": "back-perch",
+        "name": "Perch",
+        "type": "back",
+        "sample": "aquatic-12"
+      },
+      {
+        "key": "ears-pink-cheek",
+        "name": "Pink Cheek",
+        "type": "ears",
+        "sample": "bird-02"
+      },
+      {
+        "key": "ears-heart-cheek",
+        "name": "Heart Cheek",
+        "type": "ears",
+        "sample": "bird-mystic-02"
+      },
+      {
+        "key": "ears-early-bird",
+        "name": "Early Bird",
+        "type": "ears",
+        "sample": "bird-04"
+      },
+      { "key": "ears-owl", "name": "Owl", "type": "ears", "sample": "bird-06" },
+      {
+        "key": "ears-peace-maker",
+        "name": "Peace Maker",
+        "type": "ears",
+        "sample": "bird-08"
+      },
+      {
+        "key": "ears-curly",
+        "name": "Curly",
+        "type": "ears",
+        "sample": "bird-10"
+      },
+      {
+        "key": "ears-risky-bird",
+        "name": "Risky Bird",
+        "type": "ears",
+        "sample": "bird-12"
+      },
+      {
+        "key": "ears-karimata",
+        "name": "Karimata",
+        "type": "ears",
+        "sample": "japan-02"
+      },
+      {
+        "key": "tail-swallow",
+        "name": "Swallow",
+        "type": "tail",
+        "sample": "bird-02"
+      },
+      {
+        "key": "tail-snowy-swallow",
+        "name": "Snowy Swallow",
+        "type": "tail",
+        "sample": "bird-mystic-02"
+      },
+      {
+        "key": "tail-feather-fan",
+        "name": "Feather Fan",
+        "type": "tail",
+        "sample": "bird-04"
+      },
+      {
+        "key": "tail-the-last-one",
+        "name": "The Last One",
+        "type": "tail",
+        "sample": "bird-06"
+      },
+      {
+        "key": "tail-cloud",
+        "name": "Cloud",
+        "type": "tail",
+        "sample": "bird-08"
+      },
+      {
+        "key": "tail-granmas-fan",
+        "name": "Granma's Fan",
+        "type": "tail",
+        "sample": "bird-10"
+      },
+      {
+        "key": "tail-omatsuri",
+        "name": "Omatsuri",
+        "type": "tail",
+        "sample": "japan-03"
+      },
+      {
+        "key": "tail-post-fight",
+        "name": "Post Fight",
+        "type": "tail",
+        "sample": "bird-12"
+      },
+      {
+        "key": "back-balloon",
+        "name": "Balloon",
+        "type": "back",
+        "sample": "bird-02"
+      },
+      {
+        "key": "back-starry-balloon",
+        "name": "Starry Balloon",
+        "type": "back",
+        "sample": "bird-mystic-02"
+      },
+      {
+        "key": "back-cupid",
+        "name": "Cupid",
+        "type": "back",
+        "sample": "bird-04"
+      },
+      {
+        "key": "back-origami",
+        "name": "Origami",
+        "type": "back",
+        "sample": "japan-01"
+      },
+      {
+        "key": "back-raven",
+        "name": "Raven",
+        "type": "back",
+        "sample": "bird-06"
+      },
+      {
+        "key": "back-pigeon-post",
+        "name": "Pigeon Post",
+        "type": "back",
+        "sample": "bird-08"
+      },
+      {
+        "key": "back-kingfisher",
+        "name": "Kingfisher",
+        "type": "back",
+        "sample": "bird-10"
+      },
+      {
+        "key": "back-tri-feather",
+        "name": "Tri Feather",
+        "type": "back",
+        "sample": "bird-12"
+      },
+      {
+        "key": "horn-eggshell",
+        "name": "Eggshell",
+        "type": "horn",
+        "sample": "bird-02"
+      },
+      {
+        "key": "horn-golden-shell",
+        "name": "Golden Shell",
+        "type": "horn",
+        "sample": "bird-mystic-02"
+      },
+      {
+        "key": "horn-cuckoo",
+        "name": "Cuckoo",
+        "type": "horn",
+        "sample": "bird-04"
+      },
+      {
+        "key": "horn-trump",
+        "name": "Trump",
+        "type": "horn",
+        "sample": "bird-06"
+      },
+      {
+        "key": "horn-kestrel",
+        "name": "Kestrel",
+        "type": "horn",
+        "sample": "bird-08"
+      },
+      {
+        "key": "horn-wing-horn",
+        "name": "Wing Horn",
+        "type": "horn",
+        "sample": "bird-10"
+      },
+      {
+        "key": "horn-feather-spear",
+        "name": "Feather Spear",
+        "type": "horn",
+        "sample": "bird-12"
+      },
+      {
+        "key": "horn-spruce-spear",
+        "name": "Spruce Spear",
+        "type": "horn",
+        "sample": "xmas-01"
+      },
+      {
+        "key": "mouth-doubletalk",
+        "name": "Doubletalk",
+        "type": "mouth",
+        "sample": "bird-02"
+      },
+      {
+        "key": "mouth-mr-doubletalk",
+        "name": "Mr. Doubletalk",
+        "type": "mouth",
+        "sample": "bird-mystic-02"
+      },
+      {
+        "key": "mouth-peace-maker",
+        "name": "Peace Maker",
+        "type": "mouth",
+        "sample": "bird-04"
+      },
+      {
+        "key": "mouth-hungry-bird",
+        "name": "Hungry Bird",
+        "type": "mouth",
+        "sample": "bird-08"
+      },
+      {
+        "key": "mouth-little-owl",
+        "name": "Little Owl",
+        "type": "mouth",
+        "sample": "bird-10"
+      },
+      {
+        "key": "eyes-mavis",
+        "name": "Mavis",
+        "type": "eyes",
+        "sample": "bird-02"
+      },
+      {
+        "key": "eyes-sky-mavis",
+        "name": "Sky Mavis",
+        "type": "eyes",
+        "sample": "bird-mystic-02"
+      },
+      {
+        "key": "eyes-lucas",
+        "name": "Lucas",
+        "type": "eyes",
+        "sample": "bird-04"
+      },
+      {
+        "key": "eyes-icy-gaze",
+        "name": "Icy Gaze",
+        "type": "eyes",
+        "sample": "xmas-02"
+      },
+      {
+        "key": "eyes-little-owl",
+        "name": "Little Owl",
+        "type": "eyes",
+        "sample": "bird-08"
+      },
+      {
+        "key": "eyes-robin",
+        "name": "Robin",
+        "type": "eyes",
+        "sample": "bird-10"
+      },
+      {
+        "key": "eyes-gecko",
+        "name": "Gecko",
+        "type": "eyes",
+        "sample": "reptile-02"
+      },
+      {
+        "key": "eyes-crimson-gecko",
+        "name": "Crimson Gecko",
+        "type": "eyes",
+        "sample": "reptile-mystic-02"
+      },
+      {
+        "key": "eyes-tricky",
+        "name": "Tricky",
+        "type": "eyes",
+        "sample": "reptile-04"
+      },
+      {
+        "key": "eyes-scar",
+        "name": "Scar",
+        "type": "eyes",
+        "sample": "reptile-08"
+      },
+      {
+        "key": "eyes-dokuganryu",
+        "name": "Dokuganryu",
+        "type": "eyes",
+        "sample": "japan-03"
+      },
+      {
+        "key": "eyes-topaz",
+        "name": "Topaz",
+        "type": "eyes",
+        "sample": "reptile-10"
+      },
+      {
+        "key": "eyes-kabuki",
+        "name": "Kabuki",
+        "type": "eyes",
+        "sample": "japan-01"
+      },
+      {
+        "key": "mouth-toothless-bite",
+        "name": "Toothless Bite",
+        "type": "mouth",
+        "sample": "reptile-02"
+      },
+      {
+        "key": "mouth-venom-bite",
+        "name": "Venom Bite",
+        "type": "mouth",
+        "sample": "reptile-mystic-02"
+      },
+      {
+        "key": "mouth-kotaro",
+        "name": "Kotaro",
+        "type": "mouth",
+        "sample": "reptile-04"
+      },
+      {
+        "key": "mouth-razor-bite",
+        "name": "Razor Bite",
+        "type": "mouth",
+        "sample": "reptile-08"
+      },
+      {
+        "key": "mouth-tiny-turtle",
+        "name": "Tiny Turtle",
+        "type": "mouth",
+        "sample": "reptile-10"
+      },
+      {
+        "key": "mouth-dango",
+        "name": "Dango",
+        "type": "mouth",
+        "sample": "japan-02"
+      },
+      {
+        "key": "mouth-tiny-carrot",
+        "name": "Tiny Carrot",
+        "type": "mouth",
+        "sample": "xmas-02"
+      },
+      {
+        "key": "ears-pogona",
+        "name": "Pogona",
+        "type": "ears",
+        "sample": "reptile-02"
+      },
+      {
+        "key": "ears-deadly-pogona",
+        "name": "Deadly Pogona",
+        "type": "ears",
+        "sample": "reptile-mystic-02"
+      },
+      {
+        "key": "ears-friezard",
+        "name": "Friezard",
+        "type": "ears",
+        "sample": "reptile-04"
+      },
+      {
+        "key": "ears-curved-spine",
+        "name": "Curved Spine",
+        "type": "ears",
+        "sample": "reptile-06"
+      },
+      {
+        "key": "ears-small-frill",
+        "name": "Small Frill",
+        "type": "ears",
+        "sample": "reptile-08"
+      },
+      {
+        "key": "ears-swirl",
+        "name": "Swirl",
+        "type": "ears",
+        "sample": "reptile-10"
+      },
+      {
+        "key": "ears-sidebarb",
+        "name": "Sidebarb",
+        "type": "ears",
+        "sample": "reptile-12"
+      },
+      {
+        "key": "back-bone-sail",
+        "name": "Bone Sail",
+        "type": "back",
+        "sample": "reptile-02"
+      },
+      {
+        "key": "back-rugged-sail",
+        "name": "Rugged Sail",
+        "type": "back",
+        "sample": "reptile-mystic-02"
+      },
+      {
+        "key": "back-tri-spikes",
+        "name": "Tri Spikes",
+        "type": "back",
+        "sample": "reptile-04"
+      },
+      {
+        "key": "back-green-thorns",
+        "name": "Green Thorns",
+        "type": "back",
+        "sample": "reptile-06"
+      },
+      {
+        "key": "back-indian-star",
+        "name": "Indian Star",
+        "type": "back",
+        "sample": "reptile-08"
+      },
+      {
+        "key": "back-1nd14n-5t4r",
+        "name": "1ND14N-5T4R",
+        "type": "back",
+        "sample": "agamo-00"
+      },
+      {
+        "key": "back-frozen-bucket",
+        "name": "Frozen Bucket",
+        "type": "back",
+        "sample": "xmas-02"
+      },
+      {
+        "key": "back-red-ear",
+        "name": "Red Ear",
+        "type": "back",
+        "sample": "reptile-10"
+      },
+      {
+        "key": "back-croc",
+        "name": "Croc",
+        "type": "back",
+        "sample": "reptile-12"
+      },
+      {
+        "key": "tail-wall-gecko",
+        "name": "Wall Gecko",
+        "type": "tail",
+        "sample": "reptile-02"
+      },
+      {
+        "key": "tail-escaped-gecko",
+        "name": "Escaped Gecko",
+        "type": "tail",
+        "sample": "reptile-mystic-02"
+      },
+      {
+        "key": "tail-iguana",
+        "name": "Iguana",
+        "type": "tail",
+        "sample": "reptile-04"
+      },
+      {
+        "key": "tail-tiny-dino",
+        "name": "Tiny Dino",
+        "type": "tail",
+        "sample": "reptile-06"
+      },
+      {
+        "key": "tail-fir-trunk",
+        "name": "Fir Trunk",
+        "type": "tail",
+        "sample": "xmas-02"
+      },
+      {
+        "key": "tail-snake-jar",
+        "name": "Snake Jar",
+        "type": "tail",
+        "sample": "reptile-08"
+      },
+      {
+        "key": "tail-december-surprise",
+        "name": "December Surprise",
+        "type": "tail",
+        "sample": "xmas-01"
+      },
+      {
+        "key": "tail-gila",
+        "name": "Gila",
+        "type": "tail",
+        "sample": "reptile-10"
+      },
+      {
+        "key": "tail-grass-snake",
+        "name": "Grass Snake",
+        "type": "tail",
+        "sample": "reptile-12"
+      },
+      {
+        "key": "horn-unko",
+        "name": "Unko",
+        "type": "horn",
+        "sample": "reptile-02"
+      },
+      {
+        "key": "horn-pinku-unko",
+        "name": "Pinku Unko",
+        "type": "horn",
+        "sample": "reptile-mystic-02"
+      },
+      {
+        "key": "horn-scaly-spear",
+        "name": "Scaly Spear",
+        "type": "horn",
+        "sample": "reptile-04"
+      },
+      {
+        "key": "horn-cerastes",
+        "name": "Cerastes",
+        "type": "horn",
+        "sample": "reptile-06"
+      },
+      {
+        "key": "horn-scaly-spoon",
+        "name": "Scaly Spoon",
+        "type": "horn",
+        "sample": "reptile-08"
+      },
+      {
+        "key": "horn-incisor",
+        "name": "Incisor",
+        "type": "horn",
+        "sample": "reptile-10"
+      },
+      {
+        "key": "horn-bumpy",
+        "name": "Bumpy",
+        "type": "horn",
+        "sample": "reptile-12"
+      },
+      {
+        "key": "tail-carrot",
+        "name": "Carrot",
+        "type": "tail",
+        "sample": "plant-02"
+      },
+      {
+        "key": "tail-namek-carrot",
+        "name": "Namek Carrot",
+        "type": "tail",
+        "sample": "plant-mystic-02"
+      },
+      {
+        "key": "tail-cattail",
+        "name": "Cattail",
+        "type": "tail",
+        "sample": "plant-04"
+      },
+      {
+        "key": "tail-hatsune",
+        "name": "Hatsune",
+        "type": "tail",
+        "sample": "plant-06"
+      },
+      {
+        "key": "tail-yam",
+        "name": "Yam",
+        "type": "tail",
+        "sample": "plant-08"
+      },
+      {
+        "key": "tail-potato-leaf",
+        "name": "Potato Leaf",
+        "type": "tail",
+        "sample": "plant-10"
+      },
+      {
+        "key": "tail-hot-butt",
+        "name": "Hot Butt",
+        "type": "tail",
+        "sample": "plant-12"
+      },
+      {
+        "key": "mouth-serious",
+        "name": "Serious",
+        "type": "mouth",
+        "sample": "plant-02"
+      },
+      {
+        "key": "mouth-humorless",
+        "name": "Humorless",
+        "type": "mouth",
+        "sample": "plant-mystic-02"
+      },
+      {
+        "key": "mouth-zigzag",
+        "name": "Zigzag",
+        "type": "mouth",
+        "sample": "plant-04"
+      },
+      {
+        "key": "mouth-rudolph",
+        "name": "Rudolph",
+        "type": "mouth",
+        "sample": "xmas-01"
+      },
+      {
+        "key": "mouth-herbivore",
+        "name": "Herbivore",
+        "type": "mouth",
+        "sample": "plant-08"
+      },
+      {
+        "key": "mouth-silence-whisper",
+        "name": "Silence Whisper",
+        "type": "mouth",
+        "sample": "plant-10"
+      },
+      {
+        "key": "eyes-papi",
+        "name": "Papi",
+        "type": "eyes",
+        "sample": "plant-02"
+      },
+      {
+        "key": "eyes-dreamy-papi",
+        "name": "Dreamy Papi",
+        "type": "eyes",
+        "sample": "plant-mystic-02"
+      },
+      {
+        "key": "eyes-confused",
+        "name": "Confused",
+        "type": "eyes",
+        "sample": "plant-04"
+      },
+      {
+        "key": "eyes-cucumber-slice",
+        "name": "Cucumber Slice",
+        "type": "eyes",
+        "sample": "plant-08"
+      },
+      {
+        "key": "eyes-blossom",
+        "name": "Blossom",
+        "type": "eyes",
+        "sample": "plant-10"
+      },
+      {
+        "key": "ears-leafy",
+        "name": "Leafy",
+        "type": "ears",
+        "sample": "plant-02"
+      },
+      {
+        "key": "ears-the-last-leaf",
+        "name": "The Last Leaf",
+        "type": "ears",
+        "sample": "plant-mystic-02"
+      },
+      {
+        "key": "ears-clover",
+        "name": "Clover",
+        "type": "ears",
+        "sample": "plant-04"
+      },
+      {
+        "key": "ears-rosa",
+        "name": "Rosa",
+        "type": "ears",
+        "sample": "plant-06"
+      },
+      {
+        "key": "ears-sakura",
+        "name": "Sakura",
+        "type": "ears",
+        "sample": "plant-08"
+      },
+      {
+        "key": "ears-maiko",
+        "name": "Maiko",
+        "type": "ears",
+        "sample": "japan-01"
+      },
+      {
+        "key": "ears-hollow",
+        "name": "Hollow",
+        "type": "ears",
+        "sample": "plant-10"
+      },
+      {
+        "key": "ears-pinecones",
+        "name": "Pinecones",
+        "type": "ears",
+        "sample": "xmas-02"
+      },
+      {
+        "key": "ears-lotus",
+        "name": "Lotus",
+        "type": "ears",
+        "sample": "plant-12"
+      },
+      {
+        "key": "back-turnip",
+        "name": "Turnip",
+        "type": "back",
+        "sample": "plant-02"
+      },
+      {
+        "key": "back-pink-turnip",
+        "name": "Pink Turnip",
+        "type": "back",
+        "sample": "plant-mystic-02"
+      },
+      {
+        "key": "back-shiitake",
+        "name": "Shiitake",
+        "type": "back",
+        "sample": "plant-04"
+      },
+      {
+        "key": "back-yakitori",
+        "name": "Yakitori",
+        "type": "back",
+        "sample": "japan-03"
+      },
+      {
+        "key": "back-bidens",
+        "name": "Bidens",
+        "type": "back",
+        "sample": "plant-06"
+      },
+      {
+        "key": "back-watering-can",
+        "name": "Watering Can",
+        "type": "back",
+        "sample": "plant-08"
+      },
+      {
+        "key": "back-mint",
+        "name": "Mint",
+        "type": "back",
+        "sample": "plant-10"
+      },
+      {
+        "key": "back-pumpkin",
+        "name": "Pumpkin",
+        "type": "back",
+        "sample": "plant-12"
+      },
+      {
+        "key": "horn-bamboo-shoot",
+        "name": "Bamboo Shoot",
+        "type": "horn",
+        "sample": "plant-02"
+      },
+      {
+        "key": "horn-golden-bamboo-shoot",
+        "name": "Golden Bamboo Shoot",
+        "type": "horn",
+        "sample": "plant-mystic-02"
+      },
+      {
+        "key": "horn-beech",
+        "name": "Beech",
+        "type": "horn",
+        "sample": "plant-04"
+      },
+      {
+        "key": "horn-yorishiro",
+        "name": "Yorishiro",
+        "type": "horn",
+        "sample": "japan-01"
+      },
+      {
+        "key": "horn-rose-bud",
+        "name": "Rose Bud",
+        "type": "horn",
+        "sample": "plant-06"
+      },
+      {
+        "key": "horn-strawberry-shortcake",
+        "name": "Strawberry Shortcake",
+        "type": "horn",
+        "sample": "plant-08"
+      },
+      {
+        "key": "horn-cactus",
+        "name": "Cactus",
+        "type": "horn",
+        "sample": "plant-10"
+      },
+      {
+        "key": "horn-santas-gift",
+        "name": "Santa's Gift",
+        "type": "horn",
+        "sample": "xmas-02"
+      },
+      {
+        "key": "horn-watermelon",
+        "name": "Watermelon",
+        "type": "horn",
+        "sample": "plant-12"
+      }
+    ]
+  }
+}
