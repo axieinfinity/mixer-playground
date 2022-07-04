@@ -19,8 +19,8 @@ const Home = () => {
         <AxieFigure />
         <div className={s.directions}>
           <p className={s.directionsText}>
-            Directions: Use arrow keys to make the Axie run. Press "E" to
-            attack. Press "Space" to jump!
+            Directions: Use arrow keys to make the Axie run. Press &quot;e&quot;
+            to attack. Press &quot;Space&quot; to jump!
           </p>
         </div>
       </main>
