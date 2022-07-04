@@ -33,17 +33,10 @@ export class PlaygroundGame extends PIXI.Application {
     this.view.style.width = `${this.offsetWidth}px`;
     this.view.style.height = `${this.offsetHeight}px`;
 
-    const graphic = new PIXI.Graphics()
-    graphic.beginFill(0x282b39, 1);
-    graphic.drawRoundedRect(0,0,645,383, 8)
-    graphic.endFill();
-
     let state;
 
     this.loader.load(async () => {
-      this.stage?.addChild(graphic)
       const currentFigure = new CurrentFigure();
-
       const figure = await Figure.fromAxieId(this.loader, "150");
       currentFigure.currentSpine = figure;
       currentFigure.addChild(figure);

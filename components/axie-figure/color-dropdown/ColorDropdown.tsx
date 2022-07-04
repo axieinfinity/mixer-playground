@@ -1,7 +1,7 @@
 import { Listbox } from "@headlessui/react";
 
 import s from "./styles.module.css";
-import { Title } from "./title/Title";
+import { Title } from "./Title";
 
 interface Color {
   key: string;
@@ -34,10 +34,14 @@ export const ColorDropdown = ({
           <Title value={value} title={title} />
         </div>
       </Listbox.Button>
-     
+
       <Listbox.Options className={s.dropdownActive}>
         {options.map((option) => (
-          <Listbox.Option key={option.key} className={s.dropdownItem} value={option}>
+          <Listbox.Option
+            key={option.key}
+            className={s.dropdownItem}
+            value={option}
+          >
             <div className={s.previewColorContainer}>
               <div
                 style={{

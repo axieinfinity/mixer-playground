@@ -9,7 +9,7 @@ import { Mixer } from "./types";
 
 export class Figure extends PIXI.spine.Spine {
   static readonly resourcePath =
-    "https://axiecdn.axieinfinity.com/mixer-stuffs/v2/";
+    "https://axiecdn.axieinfinity.com/mixer-stuffs/v1/";
   mixer: Mixer;
 
   constructor(mixer: Mixer) {
@@ -29,6 +29,7 @@ export class Figure extends PIXI.spine.Spine {
     );
 
     const spineJsonParser = new PIXI.spine.core.SkeletonJson(spineAtlasLoader);
+    console.log(mixer.spine)
     const spineData = spineJsonParser.readSkeletonData(mixer.spine);
     super(spineData);
 

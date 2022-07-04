@@ -1,7 +1,7 @@
 import { Listbox } from "@headlessui/react";
-import cn from "classnames"
+import cn from "classnames";
 
-import { Title } from "./title/Title";
+import { Title } from "./Title";
 import s from "./styles.module.css";
 
 interface iDropdown {
@@ -17,7 +17,7 @@ export const BodyOrAnimationDropdown = ({
   value,
   setValue,
   title,
-  show
+  show,
 }: iDropdown) => {
   return (
     <Listbox
@@ -31,15 +31,21 @@ export const BodyOrAnimationDropdown = ({
           <Title value={value} title={title} />
         </div>
       </Listbox.Button>
-      <div className={cn({
-        [s.showHelperText]: show === true,
-        [s.hideHelperText]: show === false,
-      })}>
+      <div
+        className={cn({
+          [s.showHelperText]: show === true,
+          [s.hideHelperText]: show === false,
+        })}
+      >
         <span>{title} is required.</span>
       </div>
       <Listbox.Options className={s.dropdownActive}>
         {options.map((option) => (
-          <Listbox.Option key={option} className={s.dropdownItem} value={option}>
+          <Listbox.Option
+            key={option}
+            className={s.dropdownItem}
+            value={option}
+          >
             {option}
           </Listbox.Option>
         ))}

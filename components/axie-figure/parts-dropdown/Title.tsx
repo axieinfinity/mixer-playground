@@ -1,6 +1,6 @@
-import { SvgChevronDownIcon } from "@axieinfinity/icons"
+import { SvgChevronDownIcon } from "@axieinfinity/icons";
 
-import { Part } from "../../types";
+import { Part } from "../types";
 import s from "./styles.module.css";
 
 interface ITitle {
@@ -16,7 +16,7 @@ export const Title = ({ value, title }: ITitle) => {
       </div>
       <div className={s.text}>{value.name || title}</div>
       <div className={s.carrot}>
-        <SvgChevronDownIcon size={25}/>
+        <SvgChevronDownIcon size={25} />
       </div>
     </>
   );
