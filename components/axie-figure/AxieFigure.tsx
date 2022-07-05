@@ -129,9 +129,7 @@ export const AxieFigure = () => {
   };
 
   useEffect(() => {
-    if (!container) {
-      return;
-    }
+    if (!container) return;
     if (!container.current) return;
     const canvasContainer = container.current;
     if (canvasContainer.childElementCount > 0) {

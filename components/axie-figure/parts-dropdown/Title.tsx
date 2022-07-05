@@ -12,7 +12,11 @@ export const Title = ({ value, title }: ITitle) => {
   return (
     <>
       <div>
-        <img src={`/part-icons/${title}.png`} width={25} height={25} />
+        <img
+          src={`/part-icons/${title.toLowerCase()}.png`}
+          width={25}
+          height={25}
+        />
       </div>
       <div className={s.text}>{value.name || title}</div>
       <div className={s.carrot}>

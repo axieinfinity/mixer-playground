@@ -13,7 +13,11 @@ export const Title = ({ value, title }: ITitle) => {
       <div>
         {title === "Body" ? (
           <div>
-            <img src={`/part-icons/${title}.png`} width={25} height={25} />
+            <img
+              src={`/part-icons/${title.toLowerCase()}.png`}
+              width={25}
+              height={25}
+            />
           </div>
         ) : null}
       </div>
