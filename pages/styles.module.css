@@ -3,9 +3,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4px;
 }
 
-.directionsText {
-  width: 600px;
-  margin: 0px;
+.key {
+  border: solid 1px #5c627e;
+  color: #5c627e;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 11px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.text {
+  color: #5c627e;
+  line-height: 21px;
 }

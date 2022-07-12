@@ -18,10 +18,13 @@ const Home = () => {
       <main>
         <AxieFigure />
         <div className={s.directions}>
-          <p className={s.directionsText}>
-            Directions: Use arrow keys to make the Axie run. Press &quot;e&quot;
-            to attack. Press &quot;Space&quot; to jump!
-          </p>
+          <div className={s.key}>←</div>
+          <div className={s.key}>→</div>
+          <span className={s.text}>to run,</span>
+          <div className={s.key}>E</div>
+          <span className={s.text}>to attack, and</span>
+          <div className={s.key}>Space</div>
+          <span className={s.text}>to jump.</span>
         </div>
       </main>
     </div>

@@ -9,7 +9,7 @@
 
 .overlay {
   position: absolute;
-  width: 645px;
+  width: 720px;
   height: 383px;
   display: flex;
 }
@@ -65,6 +65,6 @@
 .canvas {
   overflow: hidden;
   border-radius: 4px;
-  width: 645px;
+  width: 720px;
   height: 383px;
 }
