@@ -1,11 +1,11 @@
-import { Listbox } from "@headlessui/react";
+import { Listbox } from "@headlessui/react"
 
-import { Part } from "../types";
-import s from "./styles.module.css";
+import { Part } from "../types"
+import s from "./styles.module.css"
 
 interface IDropdownOptions {
-  options: Part[];
-  axieClass: string;
+  options: Part[]
+  axieClass: string
 }
 
 export const DropdownOptionsByClass = ({
@@ -13,10 +13,8 @@ export const DropdownOptionsByClass = ({
   axieClass,
 }: IDropdownOptions) => {
   const getOptionsByClass = (axieClass: string) => {
-    return options.filter(
-      (option) => option.sample.split("-")[0] === axieClass
-    );
-  };
+    return options.filter((option) => option.sample.split("-")[0] === axieClass)
+  }
   return (
     <>
       <Listbox.Option className={s.dropdownItemLabel} disabled value="">
@@ -33,12 +31,12 @@ export const DropdownOptionsByClass = ({
           <Listbox.Option
             key={option.name}
             className={s.dropdownItem}
-            value={option}
+            value={{ part: option, partClass: axieClass }}
           >
             {option.name}
           </Listbox.Option>
-        );
+        )
       })}
     </>
-  );
-};
+  )
+}
