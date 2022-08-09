@@ -1,11 +1,9 @@
-import { SvgChevronDownIcon } from "@axieinfinity/icons";
-
-import { Part } from "../types";
-import s from "./styles.module.css";
+import { Part } from "../types"
+import s from "./styles.module.css"
 
 interface ITitle {
-  value: Part;
-  title: string;
+  value: Part
+  title: string
 }
 
 export const Title = ({ value, title }: ITitle) => {
@@ -20,8 +18,8 @@ export const Title = ({ value, title }: ITitle) => {
       </div>
       <div className={s.text}>{value.name || title}</div>
       <div className={s.carrot}>
-        <SvgChevronDownIcon size={25} />
+        <img src="./chevron-down.png" width={14} />
       </div>
     </>
-  );
-};
+  )
+}
