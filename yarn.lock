@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@axieinfinity/mixer@1.1.2":
-  version "1.1.2"
-  resolved "https://npm.pkg.github.com/download/@axieinfinity/mixer/1.1.2/4b230bc890dd5460e4eba2b39075cdf7f306fb07#4b230bc890dd5460e4eba2b39075cdf7f306fb07"
-  integrity sha512-Rt9QxzoMZnJXhjNNQR4l5EBFyvE/w3PeTiJvdIgjCaebphRs1MLQwUbeXnl7pjgMGvadsUqeYorOyv5Ypg4Z7Q==
+"@axieinfinity/mixer@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@axieinfinity/mixer/-/mixer-1.0.1.tgz#6a38fde8eaa7e83e144a294dd625ed6fe7924eff"
+  integrity sha512-PY+8hF1yYKXmHXbNTEaM15Df5CGerud900C/vAG6xTlpr5R7SdFmvi/EfxxdNVPE0X9wV3dSH/Hb39IiRAXz/A==
   dependencies:
     bn.js "^5.2.1"
     lodash "^4.17.21"
