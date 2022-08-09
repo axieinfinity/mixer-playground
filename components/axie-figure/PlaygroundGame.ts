@@ -1,8 +1,8 @@
 import * as PIXI from "pixi.js";
 
-import { Key, contain } from "../../utils/helper";
-import { Figure } from "./Figure";
+import { contain, Key } from "../../utils/helper";
 import { CurrentFigure } from "./CurrentFigure";
+import { Figure } from "./Figure";
 import { AxieDirection, Mixer } from "./types";
 
 class ContainerWithVelocity extends PIXI.Container {
@@ -37,7 +37,7 @@ export class PlaygroundGame extends PIXI.Application {
 
     this.loader.load(async () => {
       const currentFigure = new CurrentFigure();
-      const figure = await Figure.fromAxieId(this.loader, "150");
+      const figure = await Figure.fromAxieId(this.loader, "11390642");
       currentFigure.currentSpine = figure;
       currentFigure.addChild(figure);
       currentFigure.changeCurrentAnimation("action/idle/normal", true);
@@ -48,7 +48,6 @@ export class PlaygroundGame extends PIXI.Application {
       this.stage?.addChild(currentFigure);
       this.currentFigure = currentFigure;
       this.currentFigure.registerKeyBoardController();
-     
     });
 
     this.stage?.on("pointerdown", () => {

@@ -1,17 +1,18 @@
-import * as PIXI from 'pixi.js'
-import 'pixi-spine'
-import React, { useEffect, useRef, useState } from 'react'
 import { getSpineFromAdultCombo } from '@axieinfinity/mixer'
+import * as PIXI from 'pixi.js'
+import React, { useEffect, useRef, useState } from 'react'
 
 import { PuffLoading } from '../puff-loading/PuffLoading'
-import key from './key.json'
-import s from './styles.module.css'
-import { colorsArray, animationList } from './constants'
-import { Part, Color } from './types'
-import { PlaygroundGame } from './PlaygroundGame'
-import { PartsDropdown } from './parts-dropdown/PartsDropdown'
-import { ColorDropdown } from './color-dropdown/ColorDropdown'
 import { BodyOrAnimationDropdown } from './body-or-animation-dropdown/BodyOrAnimationDropdown'
+import { ColorDropdown } from './color-dropdown/ColorDropdown'
+import { animationList, colorsArray, summerColors } from './constants'
+import key from './key.json'
+import { PartsDropdown } from './parts-dropdown/PartsDropdown'
+import { PlaygroundGame } from './PlaygroundGame'
+import s from './styles.module.css'
+import { Color, Part } from './types'
+
+import 'pixi-spine'
 
 interface AxieParts {
   ears: Part
@@ -235,7 +236,7 @@ export const AxieFigure = () => {
               show={showHelperTextStatus.body}
             />
             <ColorDropdown
-              options={colorsArray}
+              options={body === 'body-summer' ? summerColors : colorsArray}
               setValue={setColor}
               value={color}
               title="Color"
