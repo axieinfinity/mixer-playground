@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@axieinfinity/mixer": "1.1.1",
+    "@axieinfinity/mixer": "1.1.2",
     "@headlessui/react": "^1.6.5",
     "next": "12.1.6",
     "pixi-spine": "1.6.2",

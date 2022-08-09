@@ -1,17 +1,17 @@
-import { Listbox } from "@headlessui/react";
-import cn from "classnames";
+import { Listbox } from '@headlessui/react'
+import cn from 'classnames'
 
-import { Title } from "./Title";
-import { Part } from "../types";
-import { DropdownOptionsByClass } from "./DropdownOptionsByClass";
-import s from "./styles.module.css";
+import { Title } from './Title'
+import { Part } from '../types'
+import { DropdownOptionsByClass } from './DropdownOptionsByClass'
+import s from './styles.module.css'
 
 interface iPartsDropdown {
-  options: Part[];
-  value: Part;
-  title: string;
-  setValue: (value: Part) => void;
-  show: boolean;
+  options: Part[]
+  value: Part
+  title: string
+  setValue: (value: Part) => void
+  show: boolean
 }
 
 export const PartsDropdown = ({
@@ -50,7 +50,8 @@ export const PartsDropdown = ({
         <DropdownOptionsByClass axieClass="reptile" options={options} />
         <DropdownOptionsByClass axieClass="xmas" options={options} />
         <DropdownOptionsByClass axieClass="japan" options={options} />
+        <DropdownOptionsByClass axieClass="summer" options={options} />
       </Listbox.Options>
     </Listbox>
-  );
-};
+  )
+}
