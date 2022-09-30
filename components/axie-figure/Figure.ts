@@ -6,8 +6,9 @@ import {
   // VARIANT_LIST,
 } from "@axieinfinity/mixer"
 
-import { getAxieGenes } from "../../utils/axie"
+import { getGenes } from "../../utils/getGenes"
 import { Mixer } from "./types"
+import { getGenesOnChain } from "../../utils/getGenesOnChain"
 
 export class Figure extends PIXI.spine.Spine {
   static readonly resourcePath =
@@ -44,16 +45,21 @@ export class Figure extends PIXI.spine.Spine {
     return new Figure(mixer)
   }
 
-  static async fromAxieId(loader: PIXI.loaders.Loader, id: string) {
+  static async fromAxieId(loader: PIXI.loaders.Loader, id: number) {
     try {
-      const genes = await getAxieGenes(id)
+      
+      //Query from Blockchain
+        const genes = await getGenesOnChain(id)
 
-      const mixer = new AxieMixer(genes).getAssets()
-      if (!mixer) throw new Error("invalid mixer")
-      const newFigure = await this.loadAndSpawn(loader, mixer)
-      newFigure.stateData.setMix("draft/run-origin", "action/idle/normal", 0.1)
-      newFigure.stateData.setMix("action/idle/normal", "draft/run-origin", 0.2)
-      return newFigure
+        //Query from GraphQL
+        // const genes = await getGenes(id)
+
+        const mixer = new AxieMixer(genes).getAssets()
+        if (!mixer) throw new Error("invalid mixer")
+        const newFigure = await this.loadAndSpawn(loader, mixer)
+        newFigure.stateData.setMix("draft/run-origin", "action/idle/normal", 0.1)
+        newFigure.stateData.setMix("action/idle/normal", "draft/run-origin", 0.2)
+        return newFigure
     } catch (e) {
       console.log(e)
     }

@@ -16,7 +16,7 @@ export class CurrentFigure extends PIXI.Container {
     this.vx = 0;
   }
 
-  async changeSpine(loader: PIXI.loaders.Loader, id: string) {
+  async changeSpine(loader: PIXI.loaders.Loader, id: number) {
     this.removeChild(this.currentSpine);
     const prevSpine = this.currentSpine;
 

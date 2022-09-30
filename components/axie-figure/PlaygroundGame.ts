@@ -37,7 +37,7 @@ export class PlaygroundGame extends PIXI.Application {
 
     this.loader.load(async () => {
       const currentFigure = new CurrentFigure();
-      const figure = await Figure.fromAxieId(this.loader, "11390642");
+      const figure = await Figure.fromAxieId(this.loader, 11390642);
       currentFigure.currentSpine = figure;
       currentFigure.addChild(figure);
       currentFigure.changeCurrentAnimation("action/idle/normal", true);
@@ -67,7 +67,7 @@ export class PlaygroundGame extends PIXI.Application {
     this.start();
   }
 
-  changeSpine(axieId: string) {
+  changeSpine(axieId: number) {
     return this.currentFigure.changeSpine(this.loader, axieId);
   }
 
