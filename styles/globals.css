@@ -4,11 +4,10 @@ body {
   margin: 0;
   font-family: 'Work Sans', sans-serif;
   background-color: #282B39;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 * {
