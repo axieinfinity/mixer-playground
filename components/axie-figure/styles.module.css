@@ -8,55 +8,17 @@
   height: 100vh;
 }
 
-.overlay {
-  position: absolute;
-  width: 720px;
-  height: 383px;
-  display: flex;
-}
-
-.column1, .column2, .column3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.column1, .column3 {
-  width: 30%;
-}
-
-.column2 {
-  width: 40%;
-}
-
-.partsColumn {
-  display: flex;
-  flex-direction: column;
-  height: 42%;
-  width: 141px;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-
-.bottomColumn {
-  display: flex;
-  flex-direction: column;
-  height: 24%;
-  width: 141px;;
-  justify-content: space-between;
-  margin: 30px;
-}
-
 .createButton {
   height: 33px;
-  font-size: 14px;
-  background-color: #0094FF;
-  border: 1px solid #0094FF;
-  border-radius: 4px;
+  font-size: 16px;
+  background-color: #0094ff;
+  border: 1px solid #0094ff;
+  border-radius: 6px;
   color: white;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 .createButton:hover {
@@ -64,8 +26,63 @@
 }
 
 .canvas {
-  overflow: hidden;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 720px;
   height: 383px;
+  margin-left: -100px;
+}
+
+.partsColumn {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  padding: 6px;
+  width: 200px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.bodyparts {
+  width: 100%;
+}
+
+.bodyparts > div {
+  margin-bottom: 6px;
+  height: auto;
+  overflow: hidden;
+}
+
+.animation {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .partsColumn {
+    padding: 12px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: static;
+  }
+
+  .canvas {
+    height: 0px;
+    padding-bottom: 100%;
+    margin: 0;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .animation {
+    margin-top: 12px;
+  }
+
+  .bodyparts > div {
+    margin-bottom: 12px;
+  }
 }

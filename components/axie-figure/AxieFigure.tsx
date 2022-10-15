@@ -162,34 +162,75 @@ export const AxieFigure = () => {
     }
   }, [])
 
+  if (loading) return <PuffLoading size={200} />;
+
   return (
     <div className={s.container}>
-      <div className={s.overlay}>
-        <div className={s.column1}>
-          <div className={s.partsColumn}>
-            <PartsDropdown
-              options={filterByBodyPart('eyes')}
-              setValue={onAxiePartChange}
-              value={axieParts.eyes}
-              title="Eyes"
-              show={showHelperTextStatus.eyes}
-            />
-            <PartsDropdown
-              options={filterByBodyPart('ears')}
-              setValue={onAxiePartChange}
-              value={axieParts.ears}
-              title="Ears"
-              show={showHelperTextStatus.ears}
-            />
-            <PartsDropdown
-              options={filterByBodyPart('mouth')}
-              setValue={onAxiePartChange}
-              value={axieParts.mouth}
-              title="Mouth"
-              show={showHelperTextStatus.mouth}
-            />
-          </div>
-          <div className={s.bottomColumn}>
+      <div ref={container} className={s.canvas}></div>
+
+      <div className={s.partsColumn}>
+        <div className={s.bodyparts}>
+          <button className={s.createButton} onClick={onCreateSpineFromCombo}>
+            Generate Axie
+          </button>
+
+          <PartsDropdown
+            options={filterByBodyPart("eyes")}
+            setValue={onAxiePartChange}
+            value={axieParts.eyes}
+            title="Eyes"
+            show={showHelperTextStatus.eyes}
+          />
+          <PartsDropdown
+            options={filterByBodyPart("ears")}
+            setValue={onAxiePartChange}
+            value={axieParts.ears}
+            title="Ears"
+            show={showHelperTextStatus.ears}
+          />
+          <PartsDropdown
+            options={filterByBodyPart("mouth")}
+            setValue={onAxiePartChange}
+            value={axieParts.mouth}
+            title="Mouth"
+            show={showHelperTextStatus.mouth}
+          />
+
+          <PartsDropdown
+            options={filterByBodyPart("horn")}
+            setValue={onAxiePartChange}
+            value={axieParts.horn}
+            title="Horn"
+            show={showHelperTextStatus.horn}
+          />
+          <PartsDropdown
+            options={filterByBodyPart("back")}
+            setValue={onAxiePartChange}
+            value={axieParts.back}
+            title="Back"
+            show={showHelperTextStatus.back}
+          />
+          <PartsDropdown
+            options={filterByBodyPart("tail")}
+            setValue={onAxiePartChange}
+            value={axieParts.tail}
+            title="Tail"
+            show={showHelperTextStatus.back}
+          />
+          <BodyOrAnimationDropdown
+            options={key.items.bodies}
+            setValue={setBody}
+            value={body}
+            title="Body"
+            show={showHelperTextStatus.body}
+          />
+          <ColorDropdown
+            options={body === "body-summer" ? summerColors : colorsArray}
+            setValue={setColor}
+            value={color}
+            title="Color"
+          />
+          <div className={s.animation}>
             <BodyOrAnimationDropdown
               options={animationList}
               setValue={onChangeAnimation}
@@ -197,56 +238,9 @@ export const AxieFigure = () => {
               title="Animation"
               show={false}
             />
-            <button className={s.createButton} onClick={onCreateSpineFromCombo}>
-              Create Axie
-            </button>
           </div>
         </div>
-        <div className={s.column2}>{loading && <PuffLoading size={200} />}</div>
-        <div className={s.column3}>
-          <div className={s.partsColumn}>
-            <PartsDropdown
-              options={filterByBodyPart('horn')}
-              setValue={onAxiePartChange}
-              value={axieParts.horn}
-              title="Horn"
-              show={showHelperTextStatus.horn}
-            />
-            <PartsDropdown
-              options={filterByBodyPart('back')}
-              setValue={onAxiePartChange}
-              value={axieParts.back}
-              title="Back"
-              show={showHelperTextStatus.back}
-            />
-            <PartsDropdown
-              options={filterByBodyPart('tail')}
-              setValue={onAxiePartChange}
-              value={axieParts.tail}
-              title="Tail"
-              show={showHelperTextStatus.back}
-            />
-          </div>
-          <div className={s.bottomColumn}>
-            <BodyOrAnimationDropdown
-              options={key.items.bodies}
-              setValue={setBody}
-              value={body}
-              title="Body"
-              show={showHelperTextStatus.body}
-            />
-            <ColorDropdown
-              options={body === 'body-summer' ? summerColors : colorsArray}
-              setValue={setColor}
-              value={color}
-              title="Color"
-            />
-          </div>
-        </div>
-      </div>
-      <div ref={container} className={s.canvas}>
-        {loading && <PuffLoading size={200} />}
       </div>
     </div>
-  )
+  );
 }

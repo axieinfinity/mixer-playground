@@ -92,7 +92,7 @@
 .showHelperText {
   font-size: 10px;
   color: #fff;
-  padding: 6px;
+  margin-top: 6px;
 }
 
 .hideHelperText {

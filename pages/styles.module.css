@@ -1,15 +1,15 @@
 .directions {
   color: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 6px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   z-index: 10;
-  padding-bottom: 4px;
+  padding: 6px;
 }
 
 .key {
@@ -26,4 +26,18 @@
 .text {
   color: #5c627e;
   line-height: 21px;
+}
+
+@media screen and (max-width: 600px) {
+  .directions span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .directions {
+    display: none;
+    top: 0;
+    bottom: initial;
+  }
 }
