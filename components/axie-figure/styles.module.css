@@ -103,6 +103,7 @@
   width: 720px;
   height: 383px;
   margin-left: -100px;
+  overflow: hidden;
 }
 
 .partsColumn {
@@ -134,25 +135,23 @@
 
 @media screen and (max-width: 480px) {
   .partsColumn {
-    padding: 12px;
+    padding: 0 12px 12px 12px;
     width: 100%;
     height: auto;
-    display: inline-block;
+    display: block;
     position: static;
+    margin-top: -20%;
   }
 
   .canvas {
     height: 0px;
-    padding-bottom: 100%;
+    width: 100%;
+    padding-bottom: 80%;
     margin: 0;
   }
 
   .container {
     height: auto;
-  }
-
-  .animation {
-    margin-top: 12px;
   }
 
   .bodyparts > div {
