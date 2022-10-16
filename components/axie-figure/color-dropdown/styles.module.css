@@ -37,6 +37,7 @@
   border-radius: 4px;
   margin-top: 2px;
   transform: translate3d(0px, -130.5px, 0px);
+  z-index: 99;
 }
 
 .dropdownItem {
