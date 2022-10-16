@@ -1,13 +1,13 @@
 .directions {
   color: #fff;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   gap: 6px;
   position: absolute;
   bottom: 0;
   left: 0;
-  /* width: 100%; */
+  width: 100%;
   z-index: 10;
   padding: 6px;
 }

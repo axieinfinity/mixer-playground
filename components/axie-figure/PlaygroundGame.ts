@@ -26,7 +26,7 @@ export class PlaygroundGame extends PIXI.Application {
     this.axieDirection = AxieDirection.Left;
   }
 
-  startGame() {
+  startGame(axieId: string) {
     this.stage.interactive = true;
     this.renderer.view.style.touchAction = "auto";
     this.renderer.plugins.interaction.autoPreventDefault = false;
@@ -36,18 +36,30 @@ export class PlaygroundGame extends PIXI.Application {
     let state;
 
     this.loader.load(async () => {
-      const currentFigure = new CurrentFigure();
-      const figure = await Figure.fromAxieId(this.loader, "11390642");
-      currentFigure.currentSpine = figure;
-      currentFigure.addChild(figure);
-      currentFigure.changeCurrentAnimation("action/idle/normal", true);
-      currentFigure.vx = 0;
-      currentFigure.position.set(this.offsetWidth / 2, this.offsetHeight - 130);
-      contain(currentFigure, { width: 700, height: 500 });
+      try {
+        const currentFigure = new CurrentFigure();
+        const figure = await Figure.fromAxieId(this.loader, axieId);
+        console.log(figure);
 
-      this.stage?.addChild(currentFigure);
-      this.currentFigure = currentFigure;
-      this.currentFigure.registerKeyBoardController();
+        if(!figure){
+          throw new Error('Figure not found')
+        }
+        
+        currentFigure.currentSpine = figure;
+        currentFigure.addChild(figure);
+        currentFigure.changeCurrentAnimation("action/idle/normal", true);
+        currentFigure.vx = 0;
+        currentFigure.position.set(this.offsetWidth / 2, this.offsetHeight - 130);
+        contain(currentFigure, { width: 700, height: 500 });
+  
+        this.stage?.addChild(currentFigure);
+        this.currentFigure = currentFigure;
+        this.currentFigure.registerKeyBoardController();
+        
+      } catch (error) {
+        console.error(error);
+      }
+
     });
 
     this.stage?.on("pointerdown", () => {

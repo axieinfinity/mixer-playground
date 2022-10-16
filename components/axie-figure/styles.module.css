@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.createButton {
+.button {
   height: 33px;
   font-size: 16px;
   background-color: #0094ff;
@@ -18,11 +18,84 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
   width: 100%;
-  margin-bottom: 12px;
+  cursor: pointer;
+  border: 1px solid #5b6372;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 12px;
+  height: 36px;
+  text-align: center;
 }
 
-.createButton:hover {
+.fromIdFrom {
+  display: flex;
+  height: 33px;
+  font-size: 16px;
+  background-color: #1c1f25;
+  border-radius: 6px;
+  border: 1px solid #5b6372;
+  color: white;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  width: 100%;
   cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  height: 36px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fromIdFrom button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 0 12px;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  display: inline-block;
+  width: auto;
+  width: 100px;
+}
+
+.fromIdFrom button:hover {
+  background: #5b6372;
+}
+
+.axieIdInput {
+  background-color: #1c1f25;
+  border: 0px none;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 9px;
+  height: 30px;
+  line-height: 30px;
+  min-width: 80px;
+  width: calc(100% - 100px);
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.selectRandom {
+  background-color: #1c1f25;
+  border-color: #5b6372;
+  text-align: left;
+}
+
+.selectRandom:hover {
+  background-color: #5b6372;
 }
 
 .canvas {
@@ -40,7 +113,7 @@
   right: 0;
   z-index: 11;
   padding: 6px;
-  width: 200px;
+  width: 230px;
   flex-wrap: wrap;
   align-content: space-between;
 }
