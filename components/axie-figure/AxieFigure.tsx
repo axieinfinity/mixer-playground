@@ -163,13 +163,11 @@ export const AxieFigure = () => {
 
     const { offsetWidth, offsetHeight } = canvasContainer;
     const game = new PlaygroundGame({
-      backgroundAlpha: 0,
-      trasparent: true,
       resolution: window.devicePixelRatio,
       autoStart: true,
       width: offsetWidth,
       height: offsetHeight,
-      // backgroundColor: 0x282b39,
+      backgroundColor: 0x282b39,
     });
 
     gameRef.current = game;
