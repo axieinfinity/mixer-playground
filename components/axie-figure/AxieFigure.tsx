@@ -130,13 +130,16 @@ export const AxieFigure = () => {
       return new Error("Axie part selection incomplete");
     }
     await gameRef.current.changeSpineFromMixer(mixer);
+
+    // scroll to top of the page, so the user can see the animation
+    window.scrollTo(0, 0);
   }, [onCreateSpineMixerFromCombo]);
 
   const onAxieIdSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const axieId = e.target[1].value;
 
-    if (!axieId || !axieId.length)  return;
+    if (!axieId || !axieId.length) return;
 
     try {
       // update pixi game view
