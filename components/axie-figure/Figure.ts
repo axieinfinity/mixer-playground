@@ -49,10 +49,10 @@ export class Figure extends PIXI.spine.Spine {
     try {
       
       //Query from Blockchain
-        const genes = await getGenesOnChain(id)
+        // const genes = await getGenesOnChain(id)
 
         //Query from GraphQL
-        // const genes = await getGenes(id)
+        const genes = await getGenes(id)
 
         const mixer = new AxieMixer(genes).getAssets()
         if (!mixer) throw new Error("invalid mixer")
