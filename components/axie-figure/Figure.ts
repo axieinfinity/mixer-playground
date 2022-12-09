@@ -66,6 +66,14 @@ export class Figure extends PIXI.spine.Spine {
     return newFigure
   }
 
+  static async fromGenes(loader: PIXI.loaders.Loader, genes: string) {
+    const mixer = new AxieMixer(genes).getAssets()
+    const newFigure = await this.loadAndSpawn(loader, mixer)
+    newFigure.stateData.setMix("draft/run-origin", "action/idle/normal", 0.1)
+    newFigure.stateData.setMix("action/idle/normal", "draft/run-origin", 0.2)
+    return newFigure
+  }
+
   static async loadResources(loader: PIXI.loaders.Loader, mixer: Mixer) {
     loader.reset()
     const resources = this.getResources(mixer)
