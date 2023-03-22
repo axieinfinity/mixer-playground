@@ -11,7 +11,7 @@ import { Mixer } from "./types"
 
 export class Figure extends PIXI.spine.Spine {
   static readonly resourcePath =
-    "https://axiecdn.axieinfinity.com/mixer-stuffs/v2/"
+    "https://axiecdn.axieinfinity.com/mixer-stuffs/v3/"
   mixer: Mixer
 
   constructor(mixer: Mixer) {
@@ -47,8 +47,10 @@ export class Figure extends PIXI.spine.Spine {
   static async fromAxieId(loader: PIXI.loaders.Loader, id: string) {
     try {
       const genes = await getAxieGenes(id)
-
-      const mixer = new AxieMixer(genes).getAssets()
+      const meta = new Map();
+      meta.set("body-id", id);
+      meta.set("accessory-air", "accessory-air1a");
+      const mixer = new AxieMixer(genes, meta).getAssets()
       if (!mixer) throw new Error("invalid mixer")
       const newFigure = await this.loadAndSpawn(loader, mixer)
       newFigure.stateData.setMix("draft/run-origin", "action/idle/normal", 0.1)
@@ -67,7 +69,9 @@ export class Figure extends PIXI.spine.Spine {
   }
 
   static async fromGenes(loader: PIXI.loaders.Loader, genes: string) {
-    const mixer = new AxieMixer(genes).getAssets()
+    const meta = new Map();
+    meta.set("accessory-air", "accessory-air1a");
+    const mixer = new AxieMixer(genes, meta).getAssets()
     const newFigure = await this.loadAndSpawn(loader, mixer)
     newFigure.stateData.setMix("draft/run-origin", "action/idle/normal", 0.1)
     newFigure.stateData.setMix("action/idle/normal", "draft/run-origin", 0.2)
